@@ -7,7 +7,7 @@ const Navbar = () => {
   const options = [
     { label: "Home", id: "" },
     { label: "Services", id: "services" },
-    { label: "Products", id: "products" },
+    { label: "Clients", id: "clients" },
     { label: "About", id: "about" },
     { label: "Contact", id: "contact" },
   ];

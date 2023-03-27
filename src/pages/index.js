@@ -5,6 +5,8 @@ import Body from "./Body";
 import CountUp from "react-countup";
 import client1 from "../../public/assets/images/client1.png";
 import client2 from "../../public/assets/images/client2.jpeg";
+import { BiHappyHeartEyes } from "react-icons/bi";
+import { FaAward, FaRegAddressBook, FaRegClock } from "react-icons/fa";
 
 export default function Home() {
   var settings = {
@@ -27,7 +29,7 @@ export default function Home() {
       </Head>
       <Body>
         <section id="hero-area" className="bg-blue-100 ">
-          <div className="">
+          <div className="container mx-auto">
             <Slider {...settings}>
               {sliderContent.map((item, index) => (
                 <div className="" key={index}>
@@ -42,7 +44,7 @@ export default function Home() {
                       backgroundPosition: "center",
                     }}
                   >
-                    <div className="md:container  flex items-start justify-start flex-col text-left">
+                    {/* <div className="md:container  flex items-start justify-start flex-col text-left">
                       <h3 className="md:text-5xl text-3xl primary ">
                         {item.heading}
                       </h3>
@@ -65,57 +67,40 @@ export default function Home() {
                           Our Profile
                         </a>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}
             </Slider>
           </div>
         </section>
-        <section id="about" className="about">
+        <section id="about" className="about my-12">
           <div className="container mx-auto sm:px-4">
-            <div className="flex flex-wrap  mt-5">
-              <div className="lg:w-1/4 md:w-1/2 sm:w-full pr-4 pl-4">
-                <div className="count-box rounded-lg shadow-lg">
-                  <i className="fa fa-smile-o"></i>
-                  <div className="flex flex-col justify-center items-center">
-                    <CountUp end={150} duration={5} suffix="+"></CountUp>
-                    <p>Happy Clients</p>
-                  </div>
-                </div>
-              </div>
+            <p className="w-full text-5xl  font-bold text-center heading  mx-auto">
+              Our Achivements
+            </p>
 
-              <div className="lg:w-1/4 md:w-1/2 sm:w-full pr-4 pl-4 md:flex md:items-stretch">
-                <div className="count-box">
-                  <i className="fa fa-address-book-o"></i>
-                  <div className="flex flex-col justify-center items-center">
-                    <CountUp end={20} duration={5} suffix="+"></CountUp>
-                    <p>Countries</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="lg:w-1/4 md:w-1/2 sm:w-full pr-4 pl-4 md:flex md:items-stretch">
-                <div className="count-box">
-                  <i className="fa fa-clock-o"></i>
-                  <div className="flex flex-col justify-center items-center">
-                    <CountUp end={12} duration={5} suffix="+"></CountUp>
-
-                    <p>Years of experience</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="lg:w-1/4  md:w-1/2  sm:w-full pr-4 pl-4 md:flex md:items-stretch">
-                <div className="count-box">
-                  <i className="fa fa-trophy"></i>
-                  <div className="flex flex-col justify-center items-center">
-                    <CountUp end={8} duration={5} suffix="+"></CountUp>
-
-                    <p>Awards Received</p>
-                  </div>
-                </div>
-              </div>
+            <div className="flex flex-wrap  mt-5 md:my-12">
+              <Card
+                icon={<BiHappyHeartEyes className="text-gray-400 text-6xl" />}
+                duration={200}
+                title={"Happy Clients"}
+              />
+              <Card
+                icon={<FaRegAddressBook className="text-gray-400 text-6xl" />}
+                duration={15}
+                title={"Countries"}
+              />
+              <Card
+                icon={<FaRegClock className="text-gray-400 text-6xl" />}
+                duration={12}
+                title={"Years experience"}
+              />
+              <Card
+                icon={<FaAward className="text-gray-400 text-6xl" />}
+                duration={8}
+                title={"Countries Linked"}
+              />
             </div>
           </div>
         </section>
@@ -220,3 +205,28 @@ export default function Home() {
     </>
   );
 }
+export const Card = ({ icon, duration, title }) => {
+  return (
+    <div className="lg:w-1/4 md:w-1/2 sm:w-full pr-4 pl-4">
+      <div className="py-8 rounded-lg shadow-lg border">
+        <div className="flex-center justify-center gap-8">
+          {icon}
+          <div className="flex flex-col justify-center items-center">
+            <div className="center gap-4">
+              <CountUp
+                end={duration}
+                duration={5}
+                suffix="+"
+                className="text-4xl primary font-semibold"
+              ></CountUp>
+              {/* <FaSmile className="text-yellow-400 text-4xl" /> */}
+            </div>
+            <p className="font-semibold my-2 leading-8 text-2xl text-gray-600 ">
+              {title}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

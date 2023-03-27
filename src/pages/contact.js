@@ -11,9 +11,9 @@ const contact = () => {
           <div className="-mx-4 flex flex-wrap lg:justify-between mb-10 lg:mb-16">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className="mb-4 block text-base font-semibold">
+                {/* <span className="mb-4 block text-base font-semibold">
                   Contact Us
-                </span>
+                </span> */}
                 <h2 className="text-primary mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px] ">
                   GET IN TOUCH WITH US
                 </h2>
@@ -63,7 +63,7 @@ const contact = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
+              <div className="relative border border-dashed rounded-lg bg-white p-8 shadow-lg sm:p-12">
                 <form>
                   <div className="mb-6">
                     <input
