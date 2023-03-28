@@ -159,6 +159,7 @@ export default function Home() {
                   src={`/assets/images/clients/client (${item + 1}).png`}
                   alt=""
                   className="h-[250px] object-contain  my-8 pr-6"
+                  key={item}
                 />
               ))}
             </Slider>
@@ -172,7 +173,7 @@ export default function Home() {
             <p className="heading my-8 mb-12">Frequently Asked Questions</p>
             <div className="mt-20">
               {faq.map(({ quest, ans }) => (
-                <Accordion quest={quest} ans={ans} />
+                <Accordion quest={quest} ans={ans} key={ans} />
               ))}
             </div>
           </div>
