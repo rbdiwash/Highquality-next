@@ -28,42 +28,42 @@ const Navbar = () => {
           </span>
 
           <div className="flex items-center">
-            <a
+            <Link
               href="https://www.facebook.com/hiqualityoverseas?mibextid=ZbWKwL"
               className="mr-6 text-sm font-medium text-gray-500 hover:underline"
             >
               <BsFacebook />
-            </a>
-            <a
+            </Link>
+            <Link
               href="mailto:highqualitynepal@gmail.com"
               className="mr-6 text-md font-medium text-gray-500 hover:underline"
             >
               <FiMail />
-            </a>
-            <a
+            </Link>
+            <Link
               href="tel:00977-1-4357168"
               className="mr-6 text-sm font-medium text-gray-500 hover:underline"
             >
               <FaPhone />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://api.whatsapp.com/message/NHYY64RXFJ5LM1?autoload=1&app_absent=0"
               className="mr-6 text-sm font-medium text-gray-500 hover:underline"
             >
               <FaWhatsapp />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/company/high-quality-overseas-pvt-ltd/"
               className="text-md font-medium text-gray-500 hover:underline"
             >
               <FaLinkedin />
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
       <nav className="p-3 px-0 bg-white  border-gray-200  shadow top-0 sticky z-50">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <img
               src={"/assets/images/logo.png"}
               className="mr-3 h-6 sm:h-16"
@@ -72,7 +72,7 @@ const Navbar = () => {
             <span className="self-center text-xl  font-semibold whitespace-nowrap text-black">
               High Quality <br /> Overseas Pvt. Ltd.
             </span>
-          </a>
+          </Link>
           <button
             data-collapse-toggle="navbar-solid-bg"
             type="button"
@@ -104,7 +104,7 @@ const Navbar = () => {
             <ul className="flex flex-col mt-4 bg-white shadow-lg md:shadow-none text-gray-600 border text-center md:text-gray-400  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent">
               {options.map((item, index) => (
                 <li key={index} onClick={() => setOpenMenu(false)}>
-                  <a
+                  <Link
                     href={`/${item?.id}`}
                     className={
                       "hover:text-[#ec1f24] block uppercase text-lg  py-2 pr-4 pl-3   rounded md:bg-transparent md:p-0 border-b border-gray-600 md:border-0 " +
@@ -114,7 +114,7 @@ const Navbar = () => {
                     }
                   >
                     {item?.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

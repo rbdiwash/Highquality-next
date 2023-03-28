@@ -30,8 +30,8 @@ const Team = () => {
           </h2>
         </div>
         <div className="flex flex-wrap justify-center">
-          {team?.map((arg) => (
-            <div className="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
+          {team?.map((arg, i) => (
+            <div className="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3" key={i}>
               <div className="team-item">
                 <div className="team-img relative">
                   <img className="img-fluid" src={arg.image} alt="" />
