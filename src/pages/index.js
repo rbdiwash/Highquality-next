@@ -1,18 +1,14 @@
+import Accordion from "@/Components/Accordion";
 import { faq, sliderContent } from "@/constants/const";
 import Head from "next/head";
-import Slider from "react-slick";
-import Body from "./Body";
+import Link from "next/link";
 import CountUp from "react-countup";
-import client1 from "../../public/assets/images/client1.png";
-import client2 from "../../public/assets/images/client2.jpeg";
 import { BiHappyHeartEyes } from "react-icons/bi";
 import { FaAward, FaRegAddressBook, FaRegClock } from "react-icons/fa";
-import "slick-carousel/slick/slick.css";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
-import Link from "next/link";
-import { useState } from "react";
-import { FiChevronDown, FiChevronUp } from "react-icons/fi";
-import Accordion from "@/Components/Accordion";
+import "slick-carousel/slick/slick.css";
+import Body from "./Body";
 export default function Home() {
   var settings = {
     dots: true,
