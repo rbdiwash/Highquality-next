@@ -89,3 +89,33 @@
   right: 0;
   border-radius: 8px;
 }
+
+.outlined-button {
+  color: #d00422;
+  border: 1px solid #d00422;
+  border-radius: 6px;
+  padding: 8px 30px;
+  font-weight: 600;
+  width: max-content;
+  margin: auto;
+  transition: 0.3s;
+  font-size: 18px;
+}
+.outlined-button:hover {
+  background-color: #d00422;
+  color: #fff;
+  border-radius: 6px;
+
+  font-weight: "semi-bold";
+  margin: auto;
+  border: 1px solid whitesmoke;
+}
+
+.area li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+}

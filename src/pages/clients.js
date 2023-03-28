@@ -5,12 +5,12 @@ const clients = () => {
   return (
     <Body title={"Clients"} subtitle={"Clients"}>
       <div className="container mx-auto py-8">
-        <p className="text-3xl">List of Our Valued Clients.</p>
-        <p className="text-lg leading-normal tracking-tight">
+        <p className="text-3xl font-semibold">List of Our Valued Clients.</p>
+        <p className="text-xl leading-normal tracking-tight my-6">
           Without whom we could not have been where we are today. Thank you for
           your continued and never ending support.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-8 gap-y-6 my-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-8 gap-y-6 my-6">
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((item) => (
             <div
               className="col-span-1 border shadow-2xl border-dashed p-4"

@@ -1,4 +1,4 @@
-import { sliderContent } from "@/constants/const";
+import { faq, sliderContent } from "@/constants/const";
 import Head from "next/head";
 import Slider from "react-slick";
 import Body from "./Body";
@@ -7,14 +7,26 @@ import client1 from "../../public/assets/images/client1.png";
 import client2 from "../../public/assets/images/client2.jpeg";
 import { BiHappyHeartEyes } from "react-icons/bi";
 import { FaAward, FaRegAddressBook, FaRegClock } from "react-icons/fa";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
+import { useState } from "react";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import Accordion from "@/Components/Accordion";
 export default function Home() {
   var settings = {
-    fade: true,
     dots: true,
     autoplay: true,
     speed: 1500,
     slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+  };
+
+  var ClientSettings = {
+    autoplay: true,
+    speed: 500,
+    slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
   };
@@ -29,7 +41,7 @@ export default function Home() {
       </Head>
       <Body>
         <section id="hero-area" className="bg-blue-100 ">
-          <div className="container mx-auto">
+          <div className="">
             <Slider {...settings}>
               {sliderContent.map((item, index) => (
                 <div className="" key={index}>
@@ -38,7 +50,7 @@ export default function Home() {
                     style={{
                       backgroundImage: `url(${item?.image?.src})`,
                       width: "100%",
-                      height: "350px",
+                      height: "450px",
                       backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
                       backgroundPosition: "center",
@@ -76,9 +88,7 @@ export default function Home() {
         </section>
         <section id="about" className="about my-12">
           <div className="container mx-auto sm:px-4">
-            <p className="w-full text-5xl  font-bold text-center heading  mx-auto">
-              Our Achivements
-            </p>
+            <p className="heading">Our Achivements</p>
 
             <div className="flex flex-wrap  mt-5 md:my-12">
               <Card
@@ -111,7 +121,7 @@ export default function Home() {
                 <img
                   src="/assets/images/md.jpg"
                   alt=""
-                  className="rounded-full "
+                  className="rounded-full object-cover h-[500px] w-[500px]"
                 />
               </div>
               <div className="col-span-3 md:col-span-2">
@@ -139,66 +149,32 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="clients">
-          <div className="text-center">
-            <img src={client1.src} alt="" />
-            <p className="font-weight-bold">Swiss House Restaurant</p>
-            <p>Kuwait</p>
+        <section id="clients" className="my-12">
+          <div className="container mx-auto">
+            <p className="heading my-8 mb-12">Our Clients</p>
+
+            <Slider {...ClientSettings}>
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((item) => (
+                <img
+                  src={`/assets/images/clients/client (${item + 1}).png`}
+                  alt=""
+                  className="h-[250px] object-contain  my-8 pr-6"
+                />
+              ))}
+            </Slider>
           </div>
-          <div className="text-center">
-            <img src={client2.src} alt="" />
-            <p className="font-weight-bold">Jussar Emdad</p>
-            <p>UAE</p>
-          </div>
-          <div className="text-center">
-            <img src={client1.src} alt="" />
-            <p className="font-weight-bold">Swiss House Restaurant</p>
-            <p>Kuwait</p>
-          </div>
-          <div className="text-center">
-            <img src={client2.src} alt="" />
-            <p className="font-weight-bold">Jussar Emdad</p>
-            <p>UAE</p>
-          </div>
-          <div className="text-center">
-            <img src={client1.src} alt="" />
-            <p className="font-weight-bold">Swiss House Restaurant</p>
-            <p>Kuwait</p>
-          </div>
-          <div className="text-center">
-            <img src={client2.src} alt="" />
-            <p className="font-weight-bold">Jussar Emdad</p>
-            <p>UAE</p>
-          </div>
-          <div className="text-center">
-            <img src={client1.src} alt="" />
-            <p className="font-weight-bold">Swiss House Restaurant</p>
-            <p>Kuwait</p>
-          </div>
-          <div className="text-center">
-            <img src={client2.src} alt="" />
-            <p className="font-weight-bold">Jussar Emdad</p>
-            <p>UAE</p>
-          </div>
-          <div className="text-center">
-            <img src={client1.src} alt="" />
-            <p className="font-weight-bold">Swiss House Restaurant</p>
-            <p>Kuwait</p>
-          </div>
-          <div className="text-center">
-            <img src={client2.src} alt="" />
-            <p className="font-weight-bold">Jussar Emdad</p>
-            <p>UAE</p>
-          </div>
-          <div className="text-center">
-            <img src={client1.src} alt="" />
-            <p className="font-weight-bold">Swiss House Restaurant</p>
-            <p>Kuwait</p>
-          </div>
-          <div className="text-center">
-            <img src={client2.src} alt="" />
-            <p className="font-weight-bold">Jussar Emdad</p>
-            <p>UAE</p>
+          <Link href="/clients">
+            <div className="outlined-button">View All</div>
+          </Link>
+        </section>
+        <section id="faq" className="my-12 md:my-32">
+          <div className="container mx-auto">
+            <p className="heading my-8 mb-12">Frequently Asked Questions</p>
+            <div className="mt-20">
+              {faq.map(({ quest, ans }) => (
+                <Accordion quest={quest} ans={ans} />
+              ))}
+            </div>
           </div>
         </section>
       </Body>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaLinkedin, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { useRouter } from "next/router";
@@ -7,6 +7,7 @@ const Navbar = () => {
   const options = [
     { label: "Home", id: "" },
     { label: "Services", id: "services" },
+    { label: "Gallery", id: "gallery" },
     { label: "Clients", id: "clients" },
     { label: "About", id: "about" },
     { label: "Contact", id: "contact" },
@@ -18,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="text-gray-500 border-gray-200 bg-gray-200">
-        <div className=" flex flex-wrap justify-between items-center mx-auto container px-4 md:px-6 py-2.5">
+        <div className="flex flex-wrap justify-between items-center mx-auto container px-4 md:px-0 py-2.5">
           <span className="self-center md:text-lg font-semibold text-black">
             Welcome to{" "}
             <span className="text-red uppercase">
@@ -28,25 +29,31 @@ const Navbar = () => {
 
           <div className="flex items-center">
             <a
-              href="tel:0097455387973"
+              href="https://www.facebook.com/hiqualityoverseas?mibextid=ZbWKwL"
               className="mr-6 text-sm font-medium text-gray-500 hover:underline"
             >
               <BsFacebook />
             </a>
             <a
-              href="mailto:sales@aarotech-qatar.com"
+              href="mailto:highqualitynepal@gmail.com"
               className="mr-6 text-md font-medium text-gray-500 hover:underline"
             >
               <FiMail />
             </a>
             <a
-              href="tel:0097455387973"
+              href="tel:00977-1-4357168"
               className="mr-6 text-sm font-medium text-gray-500 hover:underline"
             >
               <FaPhone />
             </a>
             <a
-              href="mailto:sales@aarotech-qatar.com"
+              href="https://api.whatsapp.com/message/NHYY64RXFJ5LM1?autoload=1&app_absent=0"
+              className="mr-6 text-sm font-medium text-gray-500 hover:underline"
+            >
+              <FaWhatsapp />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/high-quality-overseas-pvt-ltd/"
               className="text-md font-medium text-gray-500 hover:underline"
             >
               <FaLinkedin />
@@ -54,7 +61,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav className="p-3 bg-white  border-gray-200  shadow top-0 sticky z-50">
+      <nav className="p-3 px-0 bg-white  border-gray-200  shadow top-0 sticky z-50">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <a href="/" className="flex items-center">
             <img
@@ -100,7 +107,10 @@ const Navbar = () => {
                   <a
                     href={`/${item?.id}`}
                     className={
-                      "hover:text-[#ec1f24] block uppercase text-lg  py-2 pr-4 pl-3   rounded md:bg-transparent md:p-0 border-b border-gray-600 md:border-0"
+                      "hover:text-[#ec1f24] block uppercase text-lg  py-2 pr-4 pl-3   rounded md:bg-transparent md:p-0 border-b border-gray-600 md:border-0 " +
+                      (check === "/" + item?.id
+                        ? "text-[#ec1f24] font-semibold"
+                        : "")
                     }
                   >
                     {item?.label}
