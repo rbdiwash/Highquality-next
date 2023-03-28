@@ -3,6 +3,7 @@ import { FaLinkedin, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { useRouter } from "next/router";
+import Link from "next/link";
 const Navbar = () => {
   const options = [
     { label: "Home", id: "" },
