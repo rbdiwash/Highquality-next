@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>High Quality OVerseas Pvt. Ltd</title>
+        <title>High Quality Overseas Pvt. Ltd.</title>
         <meta name="description" content="High Quality OVerseas Pvt. Ltd" />
         <meta name="image" content="/assets/WhiteLogo.jpeg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

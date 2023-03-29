@@ -121,24 +121,39 @@ export default function Home() {
                 />
               </div>
               <div className="col-span-3 md:col-span-2">
-                <p className="text-5xl mb-4">Message from MD</p>
-                <p className="text-lg leading-relaxed">
-                  Dear Valued Clients, <br /> <br /> It is with pride that I
-                  welcome you at High Quality Overseas Pvt. Ltd. We strive our
-                  best to satisfy the needs of both our customers and clients.
-                  We constantly improve on our existing services to respond to
-                  your ever-changing needs. Our team comprises of highly
-                  qualified and experienced associates who possess all the
-                  required resources to assist you to the best of their
-                  abilities. We have trained career counselors who are well
-                  placed to provide career related advice and information to
-                  interested candidates. We have a highly detailed and
-                  systematic data bank, which is of utmost importance to job
-                  seekers as well as employers. <br /> <br /> We shall continue
-                  to provide outstanding and quality service. We thank our
-                  valued prospective clients for trusting us and believing in
-                  our capabilities. And as our motto states, we really are only
-                  obsessed with quality!!!
+                <p className="text-4xl mb-4 font-semibold">
+                  Message from The Managing Director
+                </p>
+                <p className="text-lg leading-relaxed mt-2">
+                  It is my honor to welcome you at High Quality Overseas. My
+                  fifteen years in recruitment business has taught me one thing
+                  i.e., good business is all about human connection,
+                  transparency, and integrity in everything we do. Without it,
+                  trust cannot be built, and genuine partnerships cannot
+                  flourish. . <br /> <br /> High Quality isn’t a new player in
+                  the industry. It’s just a new name and was born out of my
+                  commitment to continue providing my clients with the very best
+                  value we can in a transparent, innovative, flexible, and
+                  accountable way. The same incredibly talented and hard-working
+                  team, delivering the high quality, flexible service we have
+                  become recognized for. <br />
+                  <br />
+                  At High Quality, our commitment is: doing recruitment your way
+                  – flexible pricing options to better suit your circumstances,
+                  superior candidates sourced from the job description we’ve
+                  calibrated with you, technology that facilitates a transparent
+                  and highly collaborative process, and shared accountability
+                  for the outcome. The way outstanding recruitment is done. The
+                  way successful partnerships are built.
+                  <br />
+                  <br />
+                  Adding real value every step of the way. That’s our promise to
+                  you.
+                  <br /> Looking forward to working with you!
+                  <div className="mt-5 text-white font-bold text-xl uppercase">
+                    -- Lokendra bahadur Ranabhat
+                  </div>
+                  <br />
                 </p>
               </div>
             </div>
