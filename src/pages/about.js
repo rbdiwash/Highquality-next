@@ -198,15 +198,16 @@ const about = () => {
           </div>
         </div>
       </section>
-      <section className="about my-10 mb-20">
+      <section className="bg-parallax my-10 mb-20 text-white">
         <div className="container mx-auto">
-          <p className="w-full animate text-4xl font-bold text-center my-6">
+          <p className="w-full heading text-white text-4xl font-bold text-center my-6">
             What makes us different?
           </p>
 
           <p className="leading-relaxed text-lg text-justify tracking-wide font-normal">
-            <span className="text-red font-semibold"> Say goodbye </span> to
-            misunderstanding, miscommunication and lack of transparency. <br />
+            <span className="text-red font-semibold text-lg">Say goodbye </span>
+            to misunderstanding, miscommunication and lack of transparency.
+            <br />
             <br /> The most common complaints clients and candidates have about
             recruiters are pretty widely known. Yet, nothing seems to change.
             Well, now it has.
@@ -217,7 +218,7 @@ const about = () => {
               <span className="text-red font-semibold text-xl underline">
                 Mismatched candidates
               </span>
-              <p className="mt-2">
+              <p className="mt-2 text-lg">
                 Candidates don’t match the brief you gave the recruiter. At High
                 Quality, we continually check in on you to make sure the
                 candidates we’re presenting are hitting the mark. Frustration
@@ -228,7 +229,7 @@ const about = () => {
               <span className="text-red font-semibold   text-xl underline">
                 You have to chase the recruiter.
               </span>
-              <p className="mt-2">
+              <p className="mt-2 text-lg">
                 You don’t get regular updates from the recruiter — you have to
                 chase them. We don’t keep our clients hanging like that. Our
                 online collaborative tool gives you updates in real time.
@@ -239,7 +240,7 @@ const about = () => {
               <span className="text-red font-semibold   text-xl underline">
                 Ill-informed candidates
               </span>
-              <p className="mt-2">
+              <p className="mt-2 text-lg">
                 Candidates turn up for interview and have a different idea about
                 what the job is, resulting in both client and candidate wasting
                 their time. Our rigorous processes and commitment to
@@ -251,7 +252,7 @@ const about = () => {
               <span className="text-red font-semibold text-xl  mb-3 underline">
                 Vague candidate evaluations
               </span>
-              <p className="mt-2">
+              <p className="mt-2 text-lg">
                 You don’t know if a candidate has been properly screened or
                 reference checked — you just have to take the recruiter’s word
                 for it. At Just Right People, you can see what we’re doing. All
@@ -264,7 +265,7 @@ const about = () => {
               <span className="text-red font-semibold   text-xl underline">
                 Black box recruitment process
               </span>
-              <p className="mt-2">
+              <p className="mt-2 text-lg">
                 You don’t know if you’re being sent the most suitable candidates
                 or just the ones the recruiter likes. That doesn’t happen with
                 us. We work to your brief, so you’ll only get the most suitable
