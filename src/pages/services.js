@@ -46,10 +46,7 @@ const services = () => {
                 <FiCheckCircle className="text-red font-bold" />
                 GARMENTS AND TEXTILE
               </li>
-              <li>
-                <FiCheckCircle className="text-red font-bold" />
-                OIL AND GASINFORMATION TECHNOLOGY
-              </li>
+
               <li>
                 <FiCheckCircle className="text-red font-bold" />
                 VEHICLE OPERATOR/MECHANIC AND MAINTENANCE
@@ -84,8 +81,7 @@ const services = () => {
                 </li>
                 <li>
                   <FiCheckCircle className="text-red font-bold" />
-                  To bring about change in the attitudes of the workers towards
-                  fellow workers, supervisor and the organization.
+                  Providing job related knowledge to the workers.
                 </li>
                 <li>
                   <FiCheckCircle className="text-red font-bold" />

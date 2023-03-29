@@ -117,7 +117,7 @@
 .area li {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   padding: 8px 0;
   font-size: 20px;
   font-weight: 600;

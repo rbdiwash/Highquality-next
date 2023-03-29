@@ -99,7 +99,7 @@ export default function Home() {
               />
               <Card
                 icon={<FaRegClock className="text-gray-400 text-6xl" />}
-                duration={12}
+                duration={8}
                 title={"Years experience"}
               />
               <Card
@@ -199,8 +199,8 @@ export const Card = ({ icon, duration, title }) => {
       <div className="py-8 rounded-lg shadow-lg border">
         <div className="flex-center justify-center gap-8">
           {icon}
-          <div className="flex flex-col justify-center items-center">
-            <div className="center gap-4">
+          <div className="flex flex-col justify-start items-center">
+            <div className="center gap-4 ">
               <CountUp
                 end={duration}
                 duration={5}

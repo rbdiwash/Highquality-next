@@ -1,4 +1,5 @@
 import BreadCrumb from "@/Components/BreadCrumb";
+import FacebookChat from "@/Components/FacebookMessenger";
 import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Header";
 import Head from "next/head";
@@ -17,6 +18,7 @@ const Body = ({ children, title, subtitle }) => {
         <Navbar />
         {check !== "/" && <BreadCrumb {...{ title, subtitle }} />}
         <div className="px-4 md:px-0">{children}</div>
+        <FacebookChat />
         <Footer />
       </div>
     </>

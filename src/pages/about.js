@@ -94,7 +94,7 @@ const about = () => {
         <div className="container mx-auto my-10 md:my-20">
           <p className="heading mb-12">Mission, Vision and Values</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 items-center">
-            <div className="col-span 1 shadow-lg hover:scale-95 hover:shadow-2xl border border-dashed px-12 py-16 rounded-xl cursor-pointer transition text-center">
+            <div className="col-span 1 shadow-lg hover:scale-95 hover:shadow-2xl border border-dashed px-12 py-16 rounded-xl cursor-pointer transition text-center duration-500">
               <img src="/assets/images/ser1.png" alt="" />
               <div className="text-black font-semibold text-2xl  my-3">
                 Our Mission
@@ -105,7 +105,7 @@ const about = () => {
                 and achieve mutually beneficial results.
               </p>
             </div>
-            <div className="col-span 1 shadow-lg hover:scale-95 hover:shadow-2xl border border-dashed px-12 py-16 rounded-xl cursor-pointer transition text-center">
+            <div className="col-span 1 shadow-lg hover:scale-95 hover:shadow-2xl border border-dashed px-12 py-16 rounded-xl cursor-pointer transition text-center duration-500s">
               <img src="/assets/images/ser1.png" alt="" />
               <div className="text-black font-semibold text-2xl  my-3">
                 Our Vision
@@ -117,7 +117,7 @@ const about = () => {
                 ethical, reliable, and transparent recruitment process.
               </p>
             </div>
-            <div className="col-span 1 shadow-lg hover:scale-95 hover:shadow-2xl border border-dashed px-12 py-16 rounded-xl cursor-pointer transition text-center">
+            <div className="col-span 1 shadow-lg hover:scale-95 hover:shadow-2xl border border-dashed px-12 py-16 rounded-xl cursor-pointer transition text-center duration-500">
               <img src="/assets/images/ser1.png" alt="" />
               <div className="text-black font-semibold text-2xl  my-3">
                 Our Values
