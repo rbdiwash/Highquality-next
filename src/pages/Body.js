@@ -2,9 +2,12 @@ import BreadCrumb from "@/Components/BreadCrumb";
 import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Header";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import React from "react";
 
 const Body = ({ children, title, subtitle }) => {
+  const route = useRouter();
+  const check = route.pathname;
   return (
     <>
       <Head>
@@ -12,7 +15,7 @@ const Body = ({ children, title, subtitle }) => {
       </Head>
       <div>
         <Navbar />
-        <BreadCrumb {...{ title, subtitle }} />
+        {check !== "/" && <BreadCrumb {...{ title, subtitle }} />}
         <div className="px-4 md:px-0">{children}</div>
         <Footer />
       </div>
