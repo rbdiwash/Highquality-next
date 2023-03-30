@@ -391,10 +391,10 @@ const services = () => {
                 mobilization and demobilization of personnel from home country
                 to the remote region is handled by us. Our services include
                 handling the entire official documents: original passport, air
-                ticket and government’s approval letter to the employee before
+                ticket and government's approval letter to the employee before
                 departure. We also acquaint them with all of the traveling
                 procedures in order to reach their destination without
-                complexity. One is recommended to collect one’s VISA from the
+                complexity. One is recommended to collect one's VISA from the
                 VISA counter in the concerned airport and to contact immigration
                 authority for VISA endorsement if his visa is not endorsed
                 before departure.

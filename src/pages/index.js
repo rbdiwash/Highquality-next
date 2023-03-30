@@ -161,8 +161,8 @@ export default function Home() {
                   i.e., good business is all about human connection,
                   transparency, and integrity in everything we do. Without it,
                   trust cannot be built, and genuine partnerships cannot
-                  flourish. . <br /> <br /> High Quality isn’t a new player in
-                  the industry. It’s just a new name and was born out of my
+                  flourish. . <br /> <br /> High Quality isn't a new player in
+                  the industry. It's just a new name and was born out of my
                   commitment to continue providing my clients with the very best
                   value we can in a transparent, innovative, flexible, and
                   accountable way. The same incredibly talented and hard-working
@@ -170,15 +170,15 @@ export default function Home() {
                   become recognized for. <br />
                   <br />
                   At High Quality, our commitment is: doing recruitment your way
-                  – flexible pricing options to better suit your circumstances,
-                  superior candidates sourced from the job description we’ve
+                  - flexible pricing options to better suit your circumstances,
+                  superior candidates sourced from the job description we've
                   calibrated with you, technology that facilitates a transparent
                   and highly collaborative process, and shared accountability
                   for the outcome. The way outstanding recruitment is done. The
                   way successful partnerships are built.
                   <br />
                   <br />
-                  Adding real value every step of the way. That’s our promise to
+                  Adding real value every step of the way. That's our promise to
                   you.
                   <br /> Looking forward to working with you!
                   <p className="mt-5 text-white font-bold text-xl uppercase">

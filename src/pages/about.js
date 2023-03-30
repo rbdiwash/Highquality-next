@@ -60,7 +60,7 @@ const about = () => {
                 i.e., good business is all about human connection, transparency,
                 and integrity in everything we do. Without it, trust cannot be
                 built, and genuine partnerships cannot flourish. . <br /> <br />
-                High Quality isn’t a new player in the industry. It’s just a new
+                High Quality isn't a new player in the industry. It's just a new
                 name and was born out of my commitment to continue providing my
                 clients with the very best value we can in a transparent,
                 innovative, flexible, and accountable way. The same incredibly
@@ -69,14 +69,14 @@ const about = () => {
                 <br />
                 At High Quality, our commitment is: doing recruitment your way –
                 flexible pricing options to better suit your circumstances,
-                superior candidates sourced from the job description we’ve
+                superior candidates sourced from the job description we've
                 calibrated with you, technology that facilitates a transparent
                 and highly collaborative process, and shared accountability for
                 the outcome. The way outstanding recruitment is done. The way
                 successful partnerships are built.
                 <br />
                 <br />
-                Adding real value every step of the way. That’s our promise to
+                Adding real value every step of the way. That's our promise to
                 you.
                 <br /> Looking forward to working with you! <br />
                 <br />
@@ -218,9 +218,9 @@ const about = () => {
                 Mismatched candidates
               </span>
               <p className="mt-2 text-lg">
-                Candidates don’t match the brief you gave the recruiter. At High
+                Candidates don't match the brief you gave the recruiter. At High
                 Quality, we continually check in on you to make sure the
-                candidates we’re presenting are hitting the mark. Frustration
+                candidates we're presenting are hitting the mark. Frustration
                 gone.
               </p>
             </div>
@@ -229,8 +229,8 @@ const about = () => {
                 You have to chase the recruiter.
               </span>
               <p className="mt-2 text-lg">
-                You don’t get regular updates from the recruiter — you have to
-                chase them. We don’t keep our clients hanging like that. Our
+                You don't get regular updates from the recruiter — you have to
+                chase them. We don't keep our clients hanging like that. Our
                 online collaborative tool gives you updates in real time.
                 Frustration gone
               </p>
@@ -252,9 +252,9 @@ const about = () => {
                 Vague candidate evaluations
               </span>
               <p className="mt-2 text-lg">
-                You don’t know if a candidate has been properly screened or
-                reference checked — you just have to take the recruiter’s word
-                for it. At Just Right People, you can see what we’re doing. All
+                You don't know if a candidate has been properly screened or
+                reference checked — you just have to take the recruiter's word
+                for it. At Just Right People, you can see what we're doing. All
                 our interview notes, reference checks and candidate documents
                 are uploaded into the online workspace so you can see for
                 yourself. Frustration gone.
@@ -265,11 +265,11 @@ const about = () => {
                 Black box recruitment process
               </span>
               <p className="mt-2 text-lg">
-                You don’t know if you’re being sent the most suitable candidates
-                or just the ones the recruiter likes. That doesn’t happen with
-                us. We work to your brief, so you’ll only get the most suitable
+                You don't know if you're being sent the most suitable candidates
+                or just the ones the recruiter likes. That doesn't happen with
+                us. We work to your brief, so you'll only get the most suitable
                 candidates. Oh, and have we mentioned our online tool that lets
-                you see what we’re doing? Frustration gone.
+                you see what we're doing? Frustration gone.
               </p>
             </div>
           </div>
