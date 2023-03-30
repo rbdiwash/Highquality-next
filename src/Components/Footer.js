@@ -1,5 +1,7 @@
+import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -22,73 +24,47 @@ const Footer = () => {
             <p className="text-2xl font-semibold">
               High Quality Overseas Pvt. ltd
             </p>
+            <i className="text-xl font-semibold itallic">
+              Quality is our Obsession
+            </i>
           </a>
         </div>
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
           <div className="space-y-3">
             <h3 className="tracking-wide text-xl underline uppercase dark:text-gray-50">
-              Product
+              Important Links
             </h3>
             <ul className="space-y-1">
               <li>
-                <a rel="noopener noreferrer" href="#">
-                  Features
-                </a>
+                <Link rel="noopener noreferrer" href="/services">
+                  Services
+                </Link>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="#">
-                  Integrations
-                </a>
+                <Link rel="noopener noreferrer" href="/clients">
+                  Clients
+                </Link>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="#">
-                  Pricing
-                </a>
+                <Link rel="noopener noreferrer" href="/about">
+                  About
+                </Link>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="#">
-                  FAQ
-                </a>
+                <Link rel="noopener noreferrer" href="/contact">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
           <div className="space-y-3">
             <h3 className="tracking-wide text-xl underline uppercase dark:text-gray-50">
-              Company
+              Get in touch
             </h3>
             <ul className="space-y-1">
-              <li>
-                <a rel="noopener noreferrer" href="#">
-                  Privacy
-                </a>
-              </li>
-              <li>
-                <a rel="noopener noreferrer" href="#">
-                  Terms of Service
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-3">
-            <h3 className="text-xl underline uppercase dark:text-gray-50">
-              Developers
-            </h3>
-            <ul className="space-y-1">
-              <li>
-                <a rel="noopener noreferrer" href="#">
-                  Public API
-                </a>
-              </li>
-              <li>
-                <a rel="noopener noreferrer" href="#">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a rel="noopener noreferrer" href="#">
-                  Guides
-                </a>
-              </li>
+              <li>Samakhusi, New Buspark , Kathmandu</li>
+              <li>+977-1-4384853, +977-1-4357168</li>
+              <li>hiqualitynepal@gmail.com </li>
             </ul>
           </div>
           <div className="space-y-3">
@@ -96,31 +72,44 @@ const Footer = () => {
               Social media
             </div>
             <div className="flex justify-start space-x-3">
-              <a
-                rel="noopener noreferrer"
-                href="#"
+              <Link
+                href="https://www.facebook.com/hiqualityoverseas?mibextid=ZbWKwL"
                 title="Facebook"
                 className="flex items-center p-1"
               >
                 <FaFacebook />
-              </a>
-              <a
-                rel="noopener noreferrer"
-                href="#"
+              </Link>
+              <Link
+                href="mailto:highqualitynepal@gmail.com"
                 title="Twitter"
                 className="flex items-center p-1"
               >
-                <FaTwitter />
-              </a>
-              <a
-                rel="noopener noreferrer"
-                href="#"
+                <FiMail />
+              </Link>
+              <Link
+                href="https://api.whatsapp.com/message/NHYY64RXFJ5LM1?autoload=1&app_absent=0"
+                title="Twitter"
+                className="flex items-center p-1"
+              >
+                <FaWhatsapp />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/high-quality-overseas-pvt-ltd/"
                 title="Instagram"
                 className="flex items-center p-1"
               >
                 <FaLinkedin />
-              </a>
+              </Link>
             </div>
+          </div>
+          <div className="space-y-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14126.580295686774!2d85.30935287082627!3d27.728242818203224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb191ed757779f%3A0xa3fb7fed922d73e8!2sSamakhusi%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1623309286420!5m2!1sen!2snp"
+              width="100%"
+              height="200"
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>

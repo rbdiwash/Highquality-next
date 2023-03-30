@@ -11,7 +11,6 @@ import "slick-carousel/slick/slick.css";
 import Body from "./Body";
 export default function Home() {
   var settings = {
-    dots: true,
     autoplay: true,
     speed: 1500,
     slidesToShow: 1,
@@ -42,7 +41,7 @@ export default function Home() {
               {sliderContent.map((item, index) => (
                 <div className="" key={index}>
                   <div
-                    className="p-4 flex items-center justify-start"
+                    className="p-4 flex items-end justify-start"
                     style={{
                       backgroundImage: `url(${item?.image?.src})`,
                       width: "100%",
@@ -52,34 +51,66 @@ export default function Home() {
                       backgroundPosition: "center",
                     }}
                   >
-                    {/* <div className="md:container  flex items-start justify-start flex-col text-left">
-                      <h3 className="md:text-5xl text-3xl primary ">
-                        {item.heading}
-                      </h3>
-                      <h2 className="text-2xl my-4 font-semibold text-gray-600">
-                        {item.content}
-                      </h2>
-
+                    <div className="md:container mx-auto  flex items-center justify-start flex-col text-left">
                       <div className="flex flex-col md:flex-row gap-4">
-                        <a className="btn mr-4 sm:mb-0" href="#services">
-                          Our Services
+                        <a
+                          className="outlined-button mr-4 sm:mb-0"
+                          href="#services"
+                        >
+                          View Profile
                         </a>
 
                         <a
-                          className="btn-alt"
+                          className="btn-primary"
                           type="button"
                           href={"assets/files/profile.pdf"}
                           download={"Aarotech_Profile.pdf"}
                           onClick={(e) => e.stopPropagation()}
                         >
-                          Our Profile
+                          Download our Profile
                         </a>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
               ))}
             </Slider>
+          </div>
+        </section>
+        <section className="about my-10 md:mb-20">
+          <div className="container mx-auto">
+            <div className="text-3xl my-3 mb-5 font-semibold">
+              Company Profile
+            </div>
+            <p className="leading-relaxed text-lg text-justify tracking-wide font-normal">
+              Linking the fine talents of candidates with great opportunities
+              available within an organization is matchmaking at its best. At
+              High Quality Overseas, we transform this into an art worth
+              emulating. Blending the needs of recruiters with the aspirations
+              of job seekers, High Quality Overseas provides a platform where
+              both sides come close, identify each other’s requirements, and
+              make informed decisions. <br />
+              <br /> At High Quality Overseas, clients and candidates can
+              benefit from our strong recruitment track record of an experienced
+              team that strictly follows a ‘Zero-Compromise’ approach in every
+              aspect of the recruitment procedure. Since it’s inception in 2017,
+              High Quality Overseas has evolved into a result-driven
+              organization focusing on fulfilling the distinct needs of business
+              establishments that approach the organization for its services.{" "}
+              <br />
+              <br /> In such a short span of time, High Quality has emerged as a
+              preferred Human Resources Consultant for organizations in the
+              Middle East, Southeast Asia and in Europe. <br />
+              <br /> High Quality Overseas promises and delivers the quality
+              services of Overseas Recruitment to clients and candidates through
+              Integrity innovate and partnership. We provide a communication
+              platform to link a gap bridge between job seekers' talent/skill
+              and clients' requirements. <br />
+              <br /> Our dedication to every success is to understand every
+              client's business by inspiration and building long-lasting
+              relationships. We are passionate about nurturing and building
+              partnerships for which excellence is everything.
+            </p>
           </div>
         </section>
         <section id="about" className="about my-12">
@@ -150,9 +181,9 @@ export default function Home() {
                   Adding real value every step of the way. That’s our promise to
                   you.
                   <br /> Looking forward to working with you!
-                  <div className="mt-5 text-white font-bold text-xl uppercase">
-                    -- Lokendra bahadur Ranabhat
-                  </div>
+                  <p className="mt-5 text-white font-bold text-xl uppercase">
+                    Lokendra bahadur Ranabhat
+                  </p>
                   <br />
                 </p>
               </div>
@@ -179,7 +210,7 @@ export default function Home() {
             <div className="outlined-button">View All</div>
           </Link>
         </section>
-        <section id="faq" className="my-12 md:my-32">
+        {/* <section id="faq" className="my-12 md:my-32">
           <div className="container mx-auto">
             <p className="heading my-8 mb-12">Frequently Asked Questions</p>
             <div className="mt-20">
@@ -188,7 +219,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </Body>
     </>
   );

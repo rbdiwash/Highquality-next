@@ -4,13 +4,11 @@ import Body from "./Body";
 
 const about = () => {
   return (
-    <Body title={"About"} subtitle={"About Us"}>
-      <section className="about my-10 md:my-20">
+    <Body title={"About Us"} subtitle={"About Us"}>
+      <section className="about my-10 md:mb-20">
         <div className="container mx-auto">
           <p className="heading">About us</p>
-          <div className="text-3xl my-3 mb-5">
-            Welcome To High Quality Overseas Pvt. Ltd
-          </div>
+          <div className="text-3xl my-3 mb-5">Company Profile</div>
           <p className="leading-relaxed text-lg text-justify tracking-wide font-normal">
             Linking the fine talents of candidates with great opportunities
             available within an organization is matchmaking at its best. At High
@@ -41,7 +39,7 @@ const about = () => {
           </p>
         </div>
       </section>
-      <section id="md" className="bg-primary text-white">
+      {/* <section id="md" className="bg-primary text-white">
         <div className="container mx-auto py-10">
           <div className="grid grid-cols-3 gap-12 items-center">
             <div className="col-span-3 md:col-span-1">
@@ -80,16 +78,17 @@ const about = () => {
                 <br />
                 Adding real value every step of the way. That’s our promise to
                 you.
-                <br /> Looking forward to working with you!
+                <br /> Looking forward to working with you! <br />
+                <br />
                 <span className="mt-5 text-white font-bold text-xl uppercase">
-                  -- Lokendra bahadur Ranabhat
+                  Lokendra bahadur Ranabhat
                 </span>
                 <br />
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="">
         <div className="container mx-auto my-10 md:my-20">
           <p className="heading mb-12">Mission, Vision and Values</p>
@@ -131,7 +130,7 @@ const about = () => {
           </div>
         </div>
       </section>
-      <section className="py-12">
+      {/* <section className="py-12">
         <div className="container mx-auto my-10 md:my-20">
           <p className="heading my-12">Management Team</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 items-center">
@@ -197,7 +196,7 @@ const about = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="bg-parallax my-10 mb-20 text-white">
         <div className="container mx-auto">
           <p className="w-full heading text-white text-4xl font-bold text-center my-6">
