@@ -88,12 +88,12 @@ export default function Home() {
               High Quality Overseas, we transform this into an art worth
               emulating. Blending the needs of recruiters with the aspirations
               of job seekers, High Quality Overseas provides a platform where
-              both sides come close, identify each other’s requirements, and
+              both sides come close, identify each other's requirements, and
               make informed decisions. <br />
               <br /> At High Quality Overseas, clients and candidates can
               benefit from our strong recruitment track record of an experienced
-              team that strictly follows a ‘Zero-Compromise’ approach in every
-              aspect of the recruitment procedure. Since it’s inception in 2017,
+              team that strictly follows a 'Zero-Compromise' approach in every
+              aspect of the recruitment procedure. Since it's inception in 2017,
               High Quality Overseas has evolved into a result-driven
               organization focusing on fulfilling the distinct needs of business
               establishments that approach the organization for its services.{" "}
