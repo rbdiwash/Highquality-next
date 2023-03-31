@@ -8,6 +8,8 @@ export default function Document() {
         <meta name="description" content="High Quality OVerseas Pvt. Ltd" />
         <meta name="image" content="/assets/WhiteLogo.jpeg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://unpkg.com/aos@2.3.1/dist/aos.css"

@@ -214,18 +214,18 @@ export default function Home() {
           <section class="mb-32 text-gray-800 background-radial-gradient">
             <div class="px-6 py-12 md:px-12 text-center lg:text-left">
               <div class="container mx-auto xl:px-32">
-                <div class="grid lg:grid-cols-2 gap-12 flex items-center">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
                   <div class="mt-12 lg:mt-0">
                     <h1
                       class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12"
-                      style="color: hsl(218, 81%, 95%)"
+                      // style="color: hsl(218, 81%, 95%)"
                     >
                       Do not miss <br />
-                      <span style="color: hsl(218, 81%, 75%)">any updates</span>
+                      <span >any updates</span>
                     </h1>
                     <p
                       class="mb-4 opacity-70 lead"
-                      style="color: hsl(218, 81%, 85%)"
+                      // style="color: hsl(218, 81%, 85%)"
                     >
                       We will write rarely and only high-quality content.
                     </p>
