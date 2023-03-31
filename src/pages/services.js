@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiCheckCircle, FiChevronDown, FiChevronUp } from "react-icons/fi";
 import Body from "./Body";
 
-const services = () => {
+const Services = () => {
   const [isActive, setIsActive] = useState(0);
   const handleOpen = (value) => {
     setIsActive(isActive === value ? 0 : value);
@@ -407,4 +407,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;
