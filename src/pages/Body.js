@@ -17,7 +17,7 @@ const Body = ({ children, title, subtitle }) => {
       <div>
         <Navbar />
         {check !== "/" && <BreadCrumb {...{ title, subtitle }} />}
-        <div className="px-4 md:px-0">{children}</div>
+        {children}
         <FacebookChat />
         <Footer />
       </div>

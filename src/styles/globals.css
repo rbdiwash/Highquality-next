@@ -264,6 +264,57 @@
   transition: 5s;
 }
 
+.serviceAreas ul li {
+  /* font-size: 20px; */
+  font-weight: 500;
+}
+
+.serviceAreas ul li {
+  list-style: none;
+}
+
+.serviceAreas ul li::before {
+  /* content: "\00BB";
+  font-size: 18px; */
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: transparent #b1051f;
+  border-style: solid;
+  border-width: 0.4em 0 0.4em 0.4em;
+  position: relative;
+  display: block;
+  left: -1em;
+  top: 1.25em;
+}
+.slider-arrow {
+  position: absolute;
+  font-size: 36px;
+  left: 10px;
+  top: 40%;
+  z-index: 1;
+  font-size: 36px;
+  color: #1e4f9b;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 4px;
+}
+.arrow-btn {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  right: 10px;
+  font-size: 36px;
+  color: #1e4f9b;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* .next {
+  float: right;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

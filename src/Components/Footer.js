@@ -25,7 +25,7 @@ const Footer = () => {
               High Quality Overseas Pvt. ltd
             </p>
             <i className="text-xl font-semibold itallic">
-              Quality is our Obsession
+              "Quality is our Obsession"
             </i>
           </a>
         </div>

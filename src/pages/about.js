@@ -1,11 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import Body from "./Body";
+import { FaRocket } from "react-icons/fa";
+import { HiLightBulb } from "react-icons/hi";
+import { IoDiamondOutline } from "react-icons/io5";
 
 const about = () => {
   return (
     <Body title={"About Us"} subtitle={"About Us"}>
-      <section className="about my-10 md:mb-20">
+      <section className="about my-10 md:mb-20 px-4 md:px-0">
         <div className="container mx-auto">
           <p className="heading">About us</p>
           <div className="text-3xl my-3 mb-5">Company Profile</div>
@@ -89,27 +92,29 @@ const about = () => {
           </div>
         </div>
       </section> */}
-      <section className="">
+      <section className="px-4 md:px-0">
         <div className="container mx-auto my-10 md:my-20">
           <p className="heading mb-12">Mission, Vision and Values</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 items-center">
             <div className="col-span 1 shadow-lg hover:scale-95 hover:shadow-2xl border border-dashed px-12 py-16 rounded-xl cursor-pointer transition text-center duration-500">
-              <img src="/assets/images/ser1.png" alt="" />
+              {/* <img src="/assets/images/ser1.png" alt="" /> */}
+              <FaRocket className="text-7xl mx-auto text-center primary my-6" />
               <div className="text-black font-semibold text-2xl  my-3">
                 Our Mission
               </div>
-              <p>
+              <p className="text-lg font-normal">
                 Our mission is to build a platform where business establishments
                 across the globe and job aspirants can connect with each other
                 and achieve mutually beneficial results.
               </p>
             </div>
             <div className="col-span 1 shadow-lg hover:scale-95 hover:shadow-2xl border border-dashed px-12 py-16 rounded-xl cursor-pointer transition text-center duration-500s">
-              <img src="/assets/images/ser1.png" alt="" />
+              {/* <img src="/assets/images/ser1.png" alt="" /> */}
+              <HiLightBulb className="text-7xl mx-auto text-center primary my-6" />
               <div className="text-black font-semibold text-2xl  my-3">
                 Our Vision
               </div>
-              <p>
+              <p className="text-lg font-normal">
                 Our vision is to become a top ranked resource for quality
                 manpower from Nepal, which is equally admired by job aspirants
                 and business establishments across the globe for promoting
@@ -117,11 +122,12 @@ const about = () => {
               </p>
             </div>
             <div className="col-span 1 shadow-lg hover:scale-95 hover:shadow-2xl border border-dashed px-12 py-16 rounded-xl cursor-pointer transition text-center duration-500">
-              <img src="/assets/images/ser1.png" alt="" />
+              {/* <img src="/assets/images/ser1.png" alt="" /> */}
+              <IoDiamondOutline className="text-7xl mx-auto text-center primary my-6" />
               <div className="text-black font-semibold text-2xl  my-3">
                 Our Values
               </div>
-              <p>
+              <p className="text-lg font-normal">
                 All individuals are accountable for the highest standards of
                 ethical behavior. We deliver recruitment services with honesty,
                 transparency, equality, and consistency.
@@ -197,9 +203,9 @@ const about = () => {
           </div>
         </div>
       </section> */}
-      <section className="bg-parallax my-10 mb-20 text-white">
+      <section className="bg-parallax my-10 py-10 text-white px-4 md:px-0">
         <div className="container mx-auto">
-          <p className="w-full heading text-white text-4xl font-bold text-center my-6">
+          <p className="w-full heading text-white text-4xl font-bold text-center my-6 mb-12">
             What makes us different?
           </p>
 

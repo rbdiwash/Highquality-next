@@ -1,14 +1,23 @@
-import Accordion from "@/Components/Accordion";
-import { faq, sliderContent } from "@/constants/const";
+import { sliderContent } from "@/constants/const";
 import Head from "next/head";
 import Link from "next/link";
 import CountUp from "react-countup";
 import { BiHappyHeartEyes } from "react-icons/bi";
-import { FaAward, FaRegAddressBook, FaRegClock } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaAward,
+  FaCaretRight,
+  FaChevronCircleLeft,
+  FaChevronCircleRight,
+  FaRegAddressBook,
+  FaRegClock,
+} from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Body from "./Body";
+import { useRef } from "react";
 export default function Home() {
   var settings = {
     autoplay: true,
@@ -16,6 +25,7 @@ export default function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
+    arrows: false,
   };
 
   var ClientSettings = {
@@ -25,7 +35,7 @@ export default function Home() {
     slidesToScroll: 1,
     infinite: true,
   };
-
+  const slider = useRef(null);
   return (
     <>
       <Head>
@@ -37,47 +47,59 @@ export default function Home() {
       <Body>
         <section id="hero-area" className="bg-blue-100 ">
           <div className="">
-            <Slider {...settings}>
+            <Slider {...settings} ref={slider}>
               {sliderContent.map((item, index) => (
-                <div className="" key={index}>
+                <div className="relative" key={index}>
                   <div
-                    className="p-4 flex items-end justify-start"
+                    className="p-4 flex items-end justify-start "
                     style={{
                       backgroundImage: `url(${item?.image?.src})`,
                       width: "100%",
-                      height: "450px",
+                      height: "550px",
                       backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
                   >
-                    <div className="md:container mx-auto  flex items-center justify-start flex-col text-left">
+                    <div className="w-full mx-auto py-4 flex items-center justify-start flex-col text-left bg-gray-200 bg-opacity-70">
                       <div className="flex flex-col md:flex-row gap-4">
                         <a
-                          className="outlined-button mr-4 sm:mb-0"
+                          className="outlined-button uppercase mr-4"
                           href="#services"
                         >
                           View Profile
                         </a>
 
                         <a
-                          className="btn-primary"
+                          className="btn-primary uppercase"
                           type="button"
                           href={"assets/files/profile.pdf"}
                           download={"Aarotech_Profile.pdf"}
                           onClick={(e) => e.stopPropagation()}
                         >
-                          Download our Profile
+                          Download Profile
                         </a>
                       </div>
                     </div>
                   </div>
+                  <button
+                    onClick={() => slider?.current?.slickPrev()}
+                    className="slider-arrow"
+                  >
+                    <FaArrowLeft />
+                  </button>
+                  <button
+                    className="arrow-btn next"
+                    onClick={() => slider?.current?.slickNext()}
+                  >
+                    <FaArrowRight />
+                  </button>
                 </div>
               ))}
             </Slider>
           </div>
         </section>
-        <section className="about my-10 md:mb-20">
+        <section className="about my-10 md:mb-20 px-4 md:px-0">
           <div className="container mx-auto">
             <div className="text-3xl my-3 mb-5 font-semibold">
               Company Profile
@@ -113,11 +135,11 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section id="about" className="about my-12">
-          <div className="container mx-auto sm:px-4">
+        <section id="about" className="about my-12 px-4 md:px-0">
+          <div className="container mx-auto">
             <p className="heading">Our Achivements</p>
 
-            <div className="flex flex-wrap  mt-5 md:my-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6  mt-5 md:my-12">
               <Card
                 icon={<BiHappyHeartEyes className="text-gray-400 text-6xl" />}
                 duration={200}
@@ -126,7 +148,7 @@ export default function Home() {
               <Card
                 icon={<FaRegAddressBook className="text-gray-400 text-6xl" />}
                 duration={15}
-                title={"Countries"}
+                title={"Clients"}
               />
               <Card
                 icon={<FaRegClock className="text-gray-400 text-6xl" />}
@@ -141,21 +163,21 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="md" className="bg-primary text-white">
+        <section id="md" className="bg-primary text-white px-4 md:px-0">
           <div className="container mx-auto py-10">
             <div className="grid grid-cols-3 gap-12 items-center">
-              <div className="col-span-3 md:col-span-1">
+              {/* <div className="col-span-3 md:col-span-1">
                 <img
                   src="/assets/images/md.jpg"
                   alt=""
                   className="rounded-full object-cover h-[500px] w-[500px]"
                 />
-              </div>
-              <div className="col-span-3 md:col-span-2">
+              </div> */}
+              <div className="col-span-3 md:col-span-3 mx-auto my-12">
                 <p className="text-4xl mb-4 font-semibold">
                   Message from The Managing Director
                 </p>
-                <p className="text-lg leading-relaxed mt-2">
+                <p className="text-lg leading-relaxed mt-2 text-justify">
                   It is my honor to welcome you at High Quality Overseas. My
                   fifteen years in recruitment business has taught me one thing
                   i.e., good business is all about human connection,
@@ -181,9 +203,10 @@ export default function Home() {
                   Adding real value every step of the way. That's our promise to
                   you.
                   <br /> Looking forward to working with you!
-                  <p className="mt-5 text-white font-bold text-xl uppercase">
+                  <br /> <br />
+                  <span className="mt-5 text-white font-bold text-xl uppercase">
                     Lokendra bahadur Ranabhat
-                  </p>
+                  </span>
                   <br />
                 </p>
               </div>
@@ -191,7 +214,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="clients" className="my-12">
+        <section id="clients" className="my-12 px-4 md:px-0">
           <div className="container mx-auto">
             <p className="heading my-8 mb-12">Our Clients</p>
 
@@ -210,78 +233,60 @@ export default function Home() {
             <div className="outlined-button">View All</div>
           </Link>
         </section>
-        <div class="container my-24 px-6 mx-auto">
-          <section class="mb-32 text-gray-800 background-radial-gradient">
-            <div class="px-6 py-12 md:px-12 text-center lg:text-left">
-              <div class="container mx-auto xl:px-32">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                  <div class="mt-12 lg:mt-0">
-                    <h1
-                      class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12"
-                      // style="color: hsl(218, 81%, 95%)"
-                    >
-                      Do not miss <br />
-                      <span >any updates</span>
-                    </h1>
-                    <p
-                      class="mb-4 opacity-70 lead"
-                      // style="color: hsl(218, 81%, 85%)"
-                    >
-                      We will write rarely and only high-quality content.
-                    </p>
-                  </div>
-                  <div class="mb-12 lg:mb-0">
-                    <div class="block rounded-lg shadow-lg bg-white px-6 py-12 md:px-12">
-                      <h2 class="text-3xl font-bold mb-12">
-                        Subscribe to the newsletter
-                      </h2>
-                      <form>
-                        <div class="form-group mb-6">
-                          <input
-                            type="text"
-                            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                            id="exampleInput90"
-                            placeholder="Name"
-                          />
-                        </div>
-                        <div class="form-group mb-6">
-                          <input
-                            type="email"
-                            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                            id="exampleInput91"
-                            placeholder="Email address"
-                          />
-                        </div>
-                        <div class="form-group form-check text-center mb-6">
-                          <input
-                            type="checkbox"
-                            class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                            id="exampleCheck96"
-                            checked
-                          />
-                          <label
-                            class="form-check-label inline-block text-gray-800"
-                            for="exampleCheck96"
-                          >
-                            I have read and agree to the terms
-                          </label>
-                        </div>
-                        <button
-                          type="submit"
-                          class="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                          data-mdb-ripple="true"
-                          data-mdb-ripple-color="light"
-                        >
-                          Subscribe
-                        </button>
-                      </form>
-                    </div>
+        <section className="text-white bg-primary">
+          <div className="px-4 py-12 md:px-12 lg:text-left">
+            <div className="container mx-auto text-center">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 items-center justify-between">
+                <div className="mt-12 lg:mt-0">
+                  <h1
+                    className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12"
+                    // style="color: hsl(218, 81%, 95%)"
+                  >
+                    Do you have <br />
+                    <span>any queries?</span>
+                  </h1>
+                  <p
+                    className="mb-4 opacity-70 lead"
+                    // style="color: hsl(218, 81%, 85%)"
+                  >
+                    We will get back to you as soon as we receive the message.
+                  </p>
+                </div>
+                <div className="mb-12 lg:mb-0 lg:pl-32">
+                  <div className="block rounded-lg shadow-lg bg-white px-6 py-12 md:px-12">
+                    <h2 className="text-3xl font-bold mb-12 text-center text-red">
+                      Send a Quick Message
+                    </h2>
+                    <form>
+                      <div className="form-group mb-6">
+                        <input
+                          type="text"
+                          className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                          id="exampleInput90"
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div className="form-group mb-6">
+                        <textarea
+                          type="text"
+                          className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                          id="exampleInput91"
+                          placeholder="Enter Message"
+                          rows={5}
+                        />
+                      </div>
+
+                      <button type="submit" className="btn-primary w-full">
+                        Send Message
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+
         {/* <section id="faq" className="my-12 md:my-32">
           <div className="container mx-auto">
             <p className="heading my-8 mb-12">Frequently Asked Questions</p>
@@ -298,8 +303,8 @@ export default function Home() {
 }
 export const Card = ({ icon, duration, title }) => {
   return (
-    <div className="lg:w-1/4 md:w-1/2 sm:w-full pr-4 pl-4">
-      <div className="py-8 rounded-lg shadow-lg border">
+    <div className="w-full">
+      <div className="py-8 rounded-lg shadow-lg border w-full">
         <div className="flex-center justify-center gap-8">
           {icon}
           <div className="flex flex-col justify-start items-center">

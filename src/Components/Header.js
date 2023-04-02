@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav className="p-3 px-0 bg-white  border-gray-200  shadow top-0 sticky z-50">
+      <nav className="p-3 bg-white  border-gray-200  shadow top-0 sticky z-50 px-4 md:px-0">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/" className="flex items-center">
             <img
@@ -102,13 +102,13 @@ const Navbar = () => {
             }
             id="navbar-solid-bg"
           >
-            <ul className="flex flex-col mt-4 bg-white shadow-lg md:shadow-none text-gray-600 border text-center md:text-gray-400  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent">
+            <ul className="flex flex-col mt-4 bg-white shadow-2xl md:shadow-none text-gray-600  text-center md:text-gray-400  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-lg font-semibold md:font-medium md:border-0  md:bg-transparent transition duration-500 border">
               {options.map((item, index) => (
                 <li key={index} onClick={() => setOpenMenu(false)}>
                   <Link
                     href={`/${item?.id}`}
                     className={
-                      "hover:text-[#ec1f24] block uppercase text-lg  py-2 pr-4 pl-3   rounded md:bg-transparent md:p-0 border-b border-gray-600 md:border-0 " +
+                      "hover:text-[#ec1f24] block uppercase text-lg  py-6 md:py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 border-b  md:border-0 " +
                       (check === "/" + item?.id
                         ? "text-[#ec1f24] font-semibold"
                         : "")

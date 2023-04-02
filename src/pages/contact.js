@@ -6,9 +6,10 @@ import Body from "./Body";
 const contact = () => {
   return (
     <Body title={"Contact"} subtitle={"Contact"}>
-      <section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px]">
-        <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap lg:justify-between mb-10 lg:mb-16">
+      <section className="relative z-10 overflow-hidden bg-white  px-4 md:px-0">
+        <div className="container mx-auto py-8">
+          <p className="heading">Contact Us</p>
+          <div className="-mx-4 flex flex-wrap lg:justify-between mb-10 lg:mb-16 py-20">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
                 {/* <span className="mb-4 block text-base font-semibold">
@@ -913,7 +914,7 @@ const contact = () => {
               </div>
             </div>
           </div>
-
+          <p className="heading my-10">Our Location</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14126.580295686774!2d85.30935287082627!3d27.728242818203224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb191ed757779f%3A0xa3fb7fed922d73e8!2sSamakhusi%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1623309286420!5m2!1sen!2snp"
             width="100%"
