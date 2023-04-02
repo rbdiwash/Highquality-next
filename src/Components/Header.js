@@ -33,31 +33,31 @@ const Navbar = () => {
               href="https://www.facebook.com/hiqualityoverseas?mibextid=ZbWKwL"
               className="mr-6 text-sm font-medium text-gray-500 hover:underline"
             >
-              <BsFacebook />
+              <BsFacebook className="text-lg" />
             </Link>
             <Link
               href="mailto:highqualitynepal@gmail.com"
               className="mr-6 text-md font-medium text-gray-500 hover:underline"
             >
-              <FiMail />
+              <FiMail className="text-lg" />
             </Link>
             <Link
               href="tel:00977-1-4357168"
               className="mr-6 text-sm font-medium text-gray-500 hover:underline"
             >
-              <FaPhone />
+              <FaPhone className="text-lg" />
             </Link>
             <Link
               href="https://api.whatsapp.com/message/NHYY64RXFJ5LM1?autoload=1&app_absent=0"
               className="mr-6 text-sm font-medium text-gray-500 hover:underline"
             >
-              <FaWhatsapp />
+              <FaWhatsapp className="text-lg" />
             </Link>
             <Link
               href="https://www.linkedin.com/company/high-quality-overseas-pvt-ltd/"
               className="text-md font-medium text-gray-500 hover:underline"
             >
-              <FaLinkedin />
+              <FaLinkedin className="text-lg" />
             </Link>
           </div>
         </div>

@@ -29,12 +29,12 @@ const Footer = () => {
             </i>
           </a>
         </div>
-        <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+        <div className="grid grid-cols-1  md:grid-cols-4 text-sm gap-x-3 gap-y-8 lg:w-2/3">
           <div className="space-y-3">
             <h3 className="tracking-wide text-xl underline uppercase dark:text-gray-50">
               Important Links
             </h3>
-            <ul className="space-y-1">
+            <ul className="space-y-1 text-base">
               <li>
                 <Link rel="noopener noreferrer" href="/services">
                   Services
@@ -61,7 +61,7 @@ const Footer = () => {
             <h3 className="tracking-wide text-xl underline uppercase dark:text-gray-50">
               Get in touch
             </h3>
-            <ul className="space-y-1">
+            <ul className="space-y-1 text-base">
               <li>Samakhusi, New Buspark , Kathmandu</li>
               <li>+977-1-4384853, +977-1-4357168</li>
               <li>hiqualitynepal@gmail.com </li>
@@ -77,28 +77,28 @@ const Footer = () => {
                 title="Facebook"
                 className="flex items-center p-1"
               >
-                <FaFacebook />
+                <FaFacebook className="text-3xl" />
               </Link>
               <Link
                 href="mailto:highqualitynepal@gmail.com"
                 title="Twitter"
                 className="flex items-center p-1"
               >
-                <FiMail />
+                <FiMail className="text-3xl" />
               </Link>
               <Link
                 href="https://api.whatsapp.com/message/NHYY64RXFJ5LM1?autoload=1&app_absent=0"
                 title="Twitter"
                 className="flex items-center p-1"
               >
-                <FaWhatsapp />
+                <FaWhatsapp className="text-3xl" />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/high-quality-overseas-pvt-ltd/"
                 title="Instagram"
                 className="flex items-center p-1"
               >
-                <FaLinkedin />
+                <FaLinkedin className="text-3xl" />
               </Link>
             </div>
           </div>
