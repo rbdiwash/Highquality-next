@@ -1,22 +1,20 @@
 import bg1 from "../../public/assets/images/bg1.jpg";
 import bg2 from "../../public/assets/images/bg2.jpg";
 import bg3 from "../../public/assets/images/bg3.jpg";
+import bg4 from "../../public/assets/images/bg4.png";
 
 export const sliderContent = [
   {
-    heading: "Building Materials",
-    content: "All kind of Building Materials",
     image: bg1,
   },
   {
-    heading: "Plumbing Materials",
-    content: "All kind of Building Materials",
     image: bg2,
   },
   {
-    heading: "Electrical Materials",
-    content: "All kind of Building Materials",
     image: bg3,
+  },
+  {
+    image: bg4,
   },
 ];
 
