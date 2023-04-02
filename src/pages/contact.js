@@ -95,12 +95,7 @@ const contact = () => {
                     ></textarea>
                   </div>
                   <div>
-                    <button
-                      type="submit"
-                      className="bg-primary border-primary w-full rounded border p-3 text-white transition hover:bg-opacity-90"
-                    >
-                      Send Message
-                    </button>
+                    <button className="btn-primary w-full">Send Message</button>
                   </div>
                 </form>
                 <div>

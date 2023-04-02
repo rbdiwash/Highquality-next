@@ -7,11 +7,11 @@ import Link from "next/link";
 const Navbar = () => {
   const options = [
     { label: "Home", id: "" },
+    { label: "About us", id: "about" },
     { label: "Services", id: "services" },
-    { label: "Gallery", id: "gallery" },
+    // { label: "Gallery", id: "gallery" },
     { label: "Clients", id: "clients" },
-    { label: "About", id: "about" },
-    { label: "Contact", id: "contact" },
+    { label: "Contact Us", id: "contact" },
   ];
   const route = useRouter();
   const check = route.pathname;

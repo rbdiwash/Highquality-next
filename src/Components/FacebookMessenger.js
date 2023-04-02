@@ -9,7 +9,7 @@ function FacebookChat() {
       <Script strategy="lazyOnload" id="fb-messenger">
         {`
                var chatbox = document.getElementById('fb-customer-chat');
-              chatbox.setAttribute("page_id", "108275602177212");
+              chatbox.setAttribute("page_id", "105200768469109");
               chatbox.setAttribute("attribution", "biz_inbox");
       
             window.fbAsyncInit = function() {

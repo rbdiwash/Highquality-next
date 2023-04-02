@@ -5,14 +5,15 @@ import bg4 from "../../public/assets/images/bg4.png";
 
 export const sliderContent = [
   {
+    image: bg3,
+  },
+  {
     image: bg1,
   },
   {
     image: bg2,
   },
-  {
-    image: bg3,
-  },
+
   {
     image: bg4,
   },
