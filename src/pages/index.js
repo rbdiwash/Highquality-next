@@ -51,7 +51,7 @@ export default function Home() {
               {sliderContent.map((item, index) => (
                 <div className="relative" key={index}>
                   <div
-                    className="p-4 flex items-end justify-start "
+                    className="flex items-end justify-start "
                     style={{
                       backgroundImage: `url(${item?.image?.src})`,
                       width: "100%",
