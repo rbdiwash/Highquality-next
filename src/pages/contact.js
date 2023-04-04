@@ -19,8 +19,8 @@ const contact = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="text-body-color mb-9 text-base leading-relaxed">
-                  Contact us to know about your answers to the queries and get
-                  the best consultant to choose best foreign country.
+                  Should you require further information or assistance, please
+                  do not hesitate to contact us.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="bg-red text-white mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]">
